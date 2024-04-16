@@ -6,4 +6,3 @@ owners:
 url: "https://github.com/datahub-project/datahub/"
 nodes:
   - name: Classification
-    description: A set of terms related to Data Classification
