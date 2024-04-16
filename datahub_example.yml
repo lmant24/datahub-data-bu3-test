@@ -13,16 +13,10 @@ nodes:
     terms:
       - name: Sensitive
         description: Sensitive Data
-        custom_properties:
-          is_confidential: false
       - name: Confidential
         description: Confidential Data
-        custom_properties:
-          is_confidential: true
       - name: HighlyConfidential
         description: Highly Confidential Data
-        custom_properties:
-          is_confidential: true
         domain: Marketing
   - name: PersonalInformation
     description: All terms related to personal information
@@ -72,8 +66,6 @@ nodes:
           - Shipping.StreetAddress
         related_terms:
           - Housing.Kitchen.Cutlery
-        custom_properties:
-          - is_used_for_compliance_tracking: true
         knowledge_links:
           - url: "https://en.wikipedia.org/wiki/Address"
             label: Wiki link
