@@ -7,24 +7,3 @@ url: "https://github.com/datahub-project/datahub/"
 nodes:
   - name: Classification
     description: A set of terms related to Data Classification
-    knowledge_links:
-      - label: Wiki link for classification
-        url: "https://en.wikipedia.org/wiki/Classification"
-    terms:
-      - name: Sensitive
-        description: Sensitive Data
-        custom_properties:
-          is_confidential: false
-      - name: Confidential
-        description: Confidential Data
-        custom_properties:
-          is_confidential: true
-      - name: HighlyConfidential
-        description: Highly Confidential Data
-        custom_properties:
-          is_confidential: true
-        domain: Marketing
-
-        knowledge_links:
-          - url: "https://en.wikipedia.org/wiki/Spoon"
-            label: Wiki link
