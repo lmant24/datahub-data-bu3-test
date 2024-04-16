@@ -1,0 +1,86 @@
+version: 1
+source: DataHub
+owners:
+  users:
+    - iv.orefice
+url: " "
+nodes:
+  - name: KPI Catalog
+    description: Catalogo dei KPI di UCV, suddivisi in categorie
+    knowledge_links:
+      - label: Link alla documentazione di UCV
+        url: "https://telepass.atlassian.net/wiki/spaces/DAM/pages/2723840373/UCV+-+Documentazione+Tecnica"
+    terms:
+      - name: Anagrafica Clienti
+        description: Il KPI così etichettato riporta una informazioni circa le informazioni anagrafiche del cliente
+        custom_properties:
+          is_confidential: true
+      - name: Info contrattuali
+        description: Il KPI così etichettato riporta una informazioni circa le informazioni contrattuali del cliente
+        custom_properties:
+          is_confidential: true
+      - name: Info comportamentali
+        description: Il KPI così etichettato riporta una informazioni circa le informazioni comportamentali del cliente quando si approccia ai prodotti TLP
+        custom_properties:
+          is_confidential: false
+      - name: Analisi predittive
+        description: Il KPI così etichettato riporta una informazioni relative a modelli predittivi elaborati dal team di Data Science ed esposte attraverso UCV
+        custom_properties:
+          is_confidential: false
+      - name: Info digitali
+        description: Il KPI in questione riporta una informazioni circa il comportamento nel contesto digitale del cliente, indipendentemente dal fatto che il cliente usi una applicazione o il sito web TLP
+        custom_properties:
+          is_confidential: false
+      - name: Customer Care
+        description: Il KPI di questa catergoria riporta una informazioni circa il comportamento del cliente quando si approccia al servizio di Customer Care e alle richieste fatte verso il Customer Care, ove queste siano state evase o meno
+        custom_properties:
+          is_confidential: false
+      - name: Info assicurative
+        description: Il KPI così etichettato riporta una informazioni sulle informazioni assicurative del cliente
+        custom_properties:
+          is_confidential: false
+      - name: Campaing responsiveness
+        description: Il KPI così etichettato riporta una informazioni circa la responsività del cliente alle campagne di marketing
+        custom_properties:
+          is_confidential: false
+  - name: Prova glossario random table
+    description: Provo a costruire il glossario per la random table
+    knowledge_links:
+      - label: Link immaginario alla documentazione di questa tabella 
+        url: "https://it.wikipedia.org/wiki/Michael_Jackson"
+    owners:
+      users:
+        - prova_owner
+      groups:
+        - prova_group
+    terms:
+      - name: ID
+        description: ID
+        custom_properties:
+          is_confidential: false
+        inherits:
+          - name: KPI Catalog.Anaprafica Clienti
+      - name: Gender
+        description: Genere
+        inherits:
+          - name: KPI Catalog.Anaprafica Clienti
+      - name: ReferenceDate
+        description: Data di riferimento
+        custom_properties:
+          is_confidential: false
+        domain: urn:li:domain:Engineering
+      - name: Year
+        description: Anno
+        related_terms:
+          - name: Month
+          - name: Day
+      - name: Month
+        description: Mese
+        related_terms:
+          - name: Year
+          - name: Day
+      - name: Day
+        description: Giorno
+        related_terms:
+          - name: Year
+          - name: Month
