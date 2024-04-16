@@ -3,7 +3,7 @@ source: DataHub
 owners:
   users:
     - iv.orefice
-url: " "
+url: "https://github.com/lmant24/datahub-data-bu3-test/edit/main/glossario.yml"
 nodes:
   - name: KPI Catalog
     description: Catalogo dei KPI di UCV, suddivisi in categorie
